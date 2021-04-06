@@ -2,12 +2,16 @@ import Link from "next/link";
 
 export default function Contact() {
   return (
-    <div className="contact">
-      <h2 className="contact__title">Any questions? <span className="colored">Contact us.</span></h2>
-      <p className="contact__paragraph">We're looking forward to hearing from you. Feel free to contact us if you have any questions!</p>
-      <a href="https://snipcart.com/contact-feedback">
-        <button>Contact Us</button>
-      </a>
+    <div className="text-white mt-10 text-center px-10 ">
+     <p className=" mb-10 text-justify text-xs">Black caviar is a very nutritious and healthy treat. Its unique balanced composition is rich in proteins, vitamins, polyunsaturated fatty acids and microelements, including iodine, potassium, sodium, zinc, magnesium, phosphorus. The use of this product has a positive effect on the immune system and has a general strengthening effect on the body.<br/>
+And today, all over the world, this product is considered a symbol of luxury and is one of the most expensive and refined delicacies.
+In caviar we trust!<br/>
+At NY CAVIAR you can order the best selection of caviar from Russia.<br/>
+You also have an option to purchase caviar on our website in just a few clicks. All your order history will be saved in your personalized bucket so that makes future purchases easier — just in one click. <br/>
+Every first Monday of each month, we organize wine & caviar tasting events for our loyal customers. There you can meet new friends, taste exclusive wine and caviar selection, relax and catch a good vibe.
+</p>
+<h2  className=' uppercase px-7'>
+We thank you for your interest in NY CAVIAR and guarantee high quality and satisfaction.</h2>
     </div>
   )
 }
