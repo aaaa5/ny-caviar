@@ -5,8 +5,15 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-   
-    
+    fontFamily: {
+      oswald1: ['Oswald', 'sans-serif'],
+      serif: ['Open Sans', 'serif'],
+    },
+    fontSize:{
+      title: '40px',
+      normal: '24px',
+      smoll: '12px',
+    },
   },
   variants: {
     extend: {},
@@ -15,22 +22,14 @@ module.exports = {
     
     plugin(function({ addUtilities }) {
       const newUtilities = {
-        '.font': {
-          fontFamily: 'Oswald',
-        },
-        '.text_color_size': {
+       
+        '.amber_caviar': {
           fontSize : '0.9em',
           fontFamily: 'Oswald',
           color: '#6c572f',
         },
-        '.text_product': {
-          fontFamily:  'Open Sans',
-          fontWeight: '400',
-          fontSize: '24px',
-        },
-        '.margin_dift_box': {
-          marginBottom: '5em',
-        },
+       
+     
       }
 
       addUtilities(newUtilities, ['responsive', 'hover'])
