@@ -19,13 +19,13 @@ const Product = (props: IProductProps) => {
   return (
     <div className="product w-full">
       <img  src={props.product.image} alt="" className="inline product__image"/>
-      <h2 className="text-white uppercase text_product">{props.product.name}</h2>
-      <p className="uppercase text-white mt-2  text_color_size" >
+      <h2 className=" product_title">{props.product.name}</h2>
+      <p className="uppercase text-white mt-2  amber_caviar" >
         <img className="inline mr-2 " src="/static/image7.svg" alt="" />
          amber caviar
         <img className="inline align-middle ml-2" src="/static/image7.svg" alt="" />
       </p>
-      <button className="text-white uppercase border rounded-full py-2 px-5 mt-5">
+      <button className="btn-find-out ">
       find out more
       </button>
     
