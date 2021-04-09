@@ -10,8 +10,8 @@ At NY CAVIAR you can order the best selection of caviar from Russia.<br/>
 You also have an option to purchase caviar on our website in just a few clicks. All your order history will be saved in your personalized bucket so that makes future purchases easier — just in one click. <br/>
 Every first Monday of each month, we organize wine & caviar tasting events for our loyal customers. There you can meet new friends, taste exclusive wine and caviar selection, relax and catch a good vibe.
 </p>
-<h3  className=' uppercase px-7'>
-We thank you for your interest in NY CAVIAR and guarantee high quality and satisfaction.</h3>
+<h2  className=' uppercase px-7'>
+We thank you for your interest in NY CAVIAR and guarantee high quality and satisfaction.</h2>
     </div>
   )
 }
