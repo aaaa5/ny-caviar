@@ -1,5 +1,8 @@
-import {withRouter} from 'next/router'
-import { WithRouterProps } from "next/dist/client/with-router";
+import {withRouter, RouterProps} from 'next/router'
+
+export interface Props extends RouterProps.RouteComponentProps<{
+  todoListId: string
+}> {}
 
 export interface IProduct {
   
@@ -13,7 +16,7 @@ export interface IProduct {
 
 interface IProductProps {
   product: IProduct
-  router: WithRouterProps
+  router: RouterProps
 }
 
 const Product = (props: IProductProps) => {
