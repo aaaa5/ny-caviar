@@ -1,8 +1,6 @@
-import {withRouter} from 'next/router'
-import { WithRouterProps } from "next/dist/client/with-router";
+import { useRouter } from 'next/router';
 
 export interface IProduct {
-  
   id: string
   name: string
   price: number
@@ -13,14 +11,22 @@ export interface IProduct {
 
 interface IProductProps {
   product: IProduct
-  router: WithRouterProps
 }
 
+
+
+
+
+
+
 const Product = (props: IProductProps) => {
+
+  const router = useRouter()
+
   return (
     <div className="product w-full">
       <img  src={props.product.image} alt="" className="inline product__image"/>
-      <h2 className=" product_title">{props.product.name}</h2>
+      <h2 className="uppercase text-white product_title">{props.product.name}</h2>
       <p className="uppercase text-white mt-2  amber_caviar" >
         <img className="inline mr-2 " src="/static/image7.svg" alt="" />
          amber caviar
@@ -37,7 +43,7 @@ const Product = (props: IProductProps) => {
           data-item-id={props.product.id}
           data-item-name={props.product.name}
           data-item-price={props.product.price}
-          data-item-url={props.router.pathname}
+          data-item-url={router.pathname}
           data-item-image={props.product.image}>
         <span> find out more</span>
         </button>
@@ -46,4 +52,4 @@ const Product = (props: IProductProps) => {
   )
 }
 
-export default withRouter(Product)
+export default Product

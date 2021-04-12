@@ -1,9 +1,6 @@
 import Header from "../components/Header"
-import ProductList from "../components/ProductList"
 import { IProduct } from "../components/Product"
 import Footer from "../components/Footer"
-import Contact from "../components/Contact"
-import Giftbox from "../components/Giftbox"
 import Head from "next/head"
 
 
@@ -99,7 +96,11 @@ const Index = (props: IIndexProps) => {
                       </label>
                       
                   </div >
-                  <div className="mt-3 mx-2 "> <button className="text-white uppercase bg-gold p-4 w-full rounded-sm">Add to Cart</button>
+                  <div className="mt-3 mx-2 "> <button className="text-white uppercase bg-gold p-4 w-full rounded-sm"
+                  
+                  
+                  >Add to Cart</button>
+                  
                   </div>
                  
           </section>

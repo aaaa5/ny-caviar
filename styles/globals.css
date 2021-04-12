@@ -39,7 +39,7 @@
     @apply flex items-center h-full text-xs leading-4 tracking-normal font-serif text-white ;
   }
   .option-value-name .option-price {
-      @apply leading-4 tracking-normal absolute left-auto top-5   right-2 pr-0 text-right font-serif font-bold;
+      @apply leading-4 tracking-normal absolute left-auto top-5   right-2 pr-0 text-right font-serif font-bold text-white ;
     }
     .option-value-name .option-serves {
         @apply  leading-4  tracking-wide text-xs absolute right-2 left-auto top-9 pr-0 text-right text-price font-normal;
