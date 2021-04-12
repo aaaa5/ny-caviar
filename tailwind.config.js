@@ -5,6 +5,13 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    colors: {
+      black: '#000000',
+      white: '#ffffff',
+      gold: '#6c572f',
+      price: '#A6AEAF',
+  
+    },
     fontFamily: {
       oswald1: ['Oswald', 'sans-serif'],
       serif: ['Open Sans', 'serif'],
@@ -13,6 +20,8 @@ module.exports = {
       title: '40px',
       normal: '24px',
       smoll: '12px',
+      xs: '11px',
+      
     },
   },
   variants: {
@@ -25,6 +34,11 @@ module.exports = {
        
         '.amber_caviar': {
           fontSize : '0.9em',
+          fontFamily: 'Oswald',
+          color: '#6c572f',
+        },
+        '.amber_caviar_cart': {
+          fontSize : '1.5em',
           fontFamily: 'Oswald',
           color: '#6c572f',
         },

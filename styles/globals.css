@@ -3,7 +3,7 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;700&display=swap');
 @layer base {
     body{
        @apply bg-black
@@ -13,7 +13,7 @@
         @apply font-oswald1;
         @apply text-title;
     }
-    h2, h3, h4, p, input {
+    h2, h3, h4, p {
         @apply font-serif;
       
     }
@@ -23,14 +23,28 @@
     p{
         @apply text-smoll;
     }
+  
 }
 
 
 @layer components {
-.btn-find-out {
+ .btn-find-out {
     @apply text-white uppercase border rounded-full py-2 px-5 mt-5;
   }
- 
+  .btn-find-out {
+    @apply text-white uppercase border rounded-full py-2 px-5 mt-5;
+    
+  }
+  .option-value-name span:first-child{
+    @apply flex items-center h-full text-xs leading-4 tracking-normal font-serif text-white ;
+  }
+  .option-value-name .option-price {
+      @apply leading-4 tracking-normal absolute left-auto top-5   right-2 pr-0 text-right font-serif font-bold;
+    }
+    .option-value-name .option-serves {
+        @apply  leading-4  tracking-wide text-xs absolute right-2 left-auto top-9 pr-0 text-right text-price font-normal;
+    }
+  
 }
 
 .bg_container::after{
@@ -43,4 +57,44 @@ left: 0;
 background: rgb(0,0,0);
 background: linear-gradient(0deg, rgba(0,0,0,0.8130602582830007) 7%, rgba(0,0,0,0.05675773727459732) 29%, rgba(0,212,255,0) 100%);
 
+}
+
+.option-value-name span:first-child {
+   
+   max-width: 80px;
+}
+
+
+.boxed-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+input[type="checkbox"], input[type="radio"] {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+.boxed-radio:checked+.option-value-name {
+    background: #fff;
+}
+
+
+.boxed-option input[type="radio"] + span {
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    padding: 10px 15px;
+    border: 1px solid #ffffff;
+    overflow: hidden;
+    margin: 0;
+}
+.option-value-name {
+    vertical-align: middle;
+    position: relative;
+    height: 67px
+}
+.boxed-radio:checked+.option-value-name span {
+    color: #1C1A1B;
 }
