@@ -32,7 +32,12 @@ const Product = (props: IProductProps) => {
          amber caviar
         <img className="inline align-middle ml-2" src="/static/image7.svg" alt="" />
       </p>
-      <button className="btn-find-out ">
+      <button className="snipcart-add-item product__button btn-find-out "
+       data-item-id={props.product.id}
+       data-item-name={props.product.name}
+       data-item-price={props.product.price}
+       data-item-url={router.pathname}
+       data-item-image={props.product.image}>
       find out more
       </button>
     
