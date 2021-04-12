@@ -56,42 +56,42 @@ const Index = (props: IIndexProps) => {
                       
                       
                       <label>
-                        <input className="boxed-radio" data-select="option1" id="boxed-option-1-1" type="radio" name="Options" value="100g (3.5oz) + 30g (1oz) free $169.00" tabindex="0" />
+                        <input className="boxed-radio" data-select="option1" id="boxed-option-1-1" type="radio" name="Options" value="100g (3.5oz) + 30g (1oz) free $169.00" />
                         <span className="option-value-name " ><span >100g (3.5oz) + 30g (1oz) FREE </span><span className="option-serves">Serves 2-4</span><span className="option-price">$169</span></span>
                       </label>
                     
                       
                       
                       <label>
-                        <input className="boxed-radio" data-select="option1" id="boxed-option-1-2" type="radio" name="Options" value="5x30g (5x1oz) $195.00" tabindex="0"/>
+                        <input className="boxed-radio" data-select="option1" id="boxed-option-1-2" type="radio" name="Options" value="5x30g (5x1oz) $195.00" />
                         <span className="option-value-name" ><span >5x30g (5x1oz) </span><span className="option-serves">Serves 3-5</span><span className="option-price">$195</span></span>
                       </label>
                     
                       
                       
                       <label >
-                        <input className="boxed-radio" data-select="option1" id="boxed-option-1-3" type="radio" name="Options" value="3x50g (3x1.7oz) $195.00" tabindex="0"/>
+                        <input className="boxed-radio" data-select="option1" id="boxed-option-1-3" type="radio" name="Options" value="3x50g (3x1.7oz) $195.00" />
                         <span className="option-value-name" ><span >3x50g (3x1.7oz) </span><span className="option-serves">Serves 3-5</span><span className="option-price">$195</span></span>
                       </label>
                     
                       
                       
                       <label >
-                        <input className="boxed-radio" data-select="option1" id="boxed-option-1-4" type="radio" name="Options" value="250g (8.8oz) $325.00" tabindex="0"/>
+                        <input className="boxed-radio" data-select="option1" id="boxed-option-1-4" type="radio" name="Options" value="250g (8.8oz) $325.00" />
                         <span className="option-value-name" ><span >250g (8.8oz) </span><span className="option-serves">Serves 4-8</span><span className="option-price">$325</span></span>
                       </label>
                     
                       
                       
                       <label >
-                        <input className="boxed-radio" data-select="option1" id="boxed-option-1-5" type="radio" name="Options" value="500g (17.6oz) $550.00" tabindex="0"/>
+                        <input className="boxed-radio" data-select="option1" id="boxed-option-1-5" type="radio" name="Options" value="500g (17.6oz) $550.00" />
                         <span className="option-value-name" ><span >500g (17.6oz) </span><span className="option-serves">Serves 8-16</span><span className="option-price">$550</span></span>
                       </label>
                     
                       
                       
                       <label >
-                        <input className="boxed-radio" data-select="option1" id="boxed-option-1-6" type="radio" name="Options" value="1680g (59.2oz) $1345.00" tabindex="0"/>
+                        <input className="boxed-radio" data-select="option1" id="boxed-option-1-6" type="radio" name="Options" value="1680g (59.2oz) $1345.00"/>
                         <span className="option-value-name" ><span >1680g (59.2oz) </span><span className="option-serves">Serves 20-40</span><span className="option-price">$1345</span></span>
                       </label>
                       
