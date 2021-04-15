@@ -67,11 +67,7 @@ const Productpage = (props: IIndexProps ) => {
             {props.products[0].description}
           </p>      
         </div>
-        <div>
-          <button className="text-white uppercase" onClick={()=>{dectrement()}}>-</button>
-          <input className="quantity-input__screen" type="text" value={orderQty} />
-          <button className="text-white uppercase" onClick={()=>{increment()}}>+</button>
-        </div>
+       
         <div className="mx-2 boxed-option grid grid-cols-2 gap-4">
             {props.products.map(
               p =>{
@@ -92,6 +88,11 @@ const Productpage = (props: IIndexProps ) => {
               })}
         </div>
 
+        <div>
+          <button className="text-white uppercase" onClick={()=>{dectrement()}}>-</button>
+          <input className="quantity-input__screen text-white rounded-sm border bg-grey border-gold w-12 h-8 mt-10 mb-8 mx-3 pl-1" type="text" value={orderQty} />
+          <button className="text-white uppercase" onClick={()=>{increment()}}>+</button>
+        </div>
 
         <div className="mt-3 mx-2 ">
           <button className="snipcart-add-item text-white uppercase bg-gold p-4 w-full rounded-sm"

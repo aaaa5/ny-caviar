@@ -10,7 +10,7 @@ module.exports = {
       white: '#ffffff',
       gold: '#6c572f',
       price: '#A6AEAF',
-  
+      grey:'#101010',
     },
     fontFamily: {
       oswald1: ['Oswald', 'sans-serif'],
