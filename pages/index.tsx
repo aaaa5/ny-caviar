@@ -5,7 +5,7 @@ import Footer from "../components/Footer"
 import Contact from "../components/Contact"
 import Giftbox from "../components/Giftbox"
 import Head from "next/head"
-
+import productList from "../lib/products.json"
 
 
 interface IIndexProps {
@@ -39,13 +39,9 @@ const Index = (props: IIndexProps) => {
 }
 
 Index.getInitialProps = async () => {
+  
   return {
-    products: [
-      { id: "nextjs_halfmoon",name: "Kaluga Amber", price: 25.00, image: "../static/halfmoon.png", description: "The Halfmoon betta is arguably one of the prettiest betta species. It is recognized by its large tail that can flare up to 180 degrees."} as IProduct,
-      {id: "nextjs_dragonscale", name: "Kaluga Black", price: 35, image: "../static/halfmoon.png",description: "The dragon scale betta is a rarer and higher maintenance fish. It is named by its thick white scales covering his sides that looks like dragon scale armor."} as IProduct,
-      {id: "nextjs_crowntail", name: "Osetra Amber", price: 7.50, image: "../static/halfmoon.png", description: "The crowntail is pretty common, but interesting none the less. It's recognized by the shape of its tail that has an appearance of a comb."} as IProduct,
-      {id: "nextjs_crowntail", name: "Osetra Black", price: 7.50, image: "../static/halfmoon.png", description: "The crowntail is pretty common, but interesting none the less. It's recognized by the shape of its tail that has an appearance of a comb."} as IProduct,
-    ]
+    products: productList
   }
 }
 

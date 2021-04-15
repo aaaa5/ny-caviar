@@ -1,12 +1,15 @@
 import { useRouter } from 'next/router';
+import Link from "next/link";
 
 export interface IProduct {
   id: string
   name: string
   price: number
+  type:string
   url: string  
   description: string
   image: string
+  option: any
 }
 
 interface IProductProps {
@@ -29,30 +32,15 @@ const Product = (props: IProductProps) => {
       <h2 className="uppercase text-white product_title">{props.product.name}</h2>
       <p className="uppercase text-white mt-2  amber_caviar" >
         <img className="inline mr-2 " src="/static/image7.svg" alt="" />
-         amber caviar
+          {props.product.type}
         <img className="inline align-middle ml-2" src="/static/image7.svg" alt="" />
       </p>
-      <button className="snipcart-add-item product__button btn-find-out "
-       data-item-id={props.product.id}
-       data-item-name={props.product.name}
-       data-item-price={props.product.price}
-       data-item-url={router.pathname}
-       data-item-image={props.product.image}>
-      find out more
-      </button>
-    
-      <div className="product__price-button-container">
-        <div className="product__price">${props.product.price.toFixed(2)}</div>
-        <button 
-          className="snipcart-add-item product__button"
-          data-item-id={props.product.id}
-          data-item-name={props.product.name}
-          data-item-price={props.product.price}
-          data-item-url={router.pathname}
-          data-item-image={props.product.image}>
-        <span> find out more</span>
-        </button>
-      </div>
+
+      <Link href="/product/[id]" as={"/product/" + props.product.id}>
+        <a className="btn-find-out mt-4 mb-10 inline-block">find out more</a>
+      </Link>
+      
+      
     </div>
   )
 }
