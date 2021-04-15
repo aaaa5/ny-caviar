@@ -59,11 +59,12 @@ const Productpage = (props: IIndexProps ) => {
         </h1>
         
         <p className="uppercase  mt-3 text-xl amber_caviar_cart -m-3" >
-            {}
+          {props.products[0].type}
         </p>
 
         <div className="text-white mt-10 text-center px-10 ">
           <p className=" mb-10 text-justify text-xs">
+            {props.products[0].description}
           </p>      
         </div>
         <div>
@@ -93,9 +94,9 @@ const Productpage = (props: IIndexProps ) => {
 
 
         <div className="mt-3 mx-2 ">
-          <button className="text-white uppercase bg-gold p-4 w-full rounded-sm"
+          <button className="snipcart-add-item text-white uppercase bg-gold p-4 w-full rounded-sm"
             data-item-id={props.products[0].id}
-            data-item-name={props.products[0].name + " " + orderOption}
+            data-item-name={props.products[0].name + "-" + orderOption.name}
             data-item-price={Number(orderOption.price)*Number(orderQty)}
             data-item-url={"/product/" + props.products[0].id}
             data-item-image={props.products[0].image}>Add to Cart <span>${Number(orderOption.price)*Number(orderQty)}</span></button>
@@ -108,7 +109,6 @@ const Productpage = (props: IIndexProps ) => {
 }
 
 Productpage.getInitialProps =   ({query}) => {
-
   
   let result = productList.filter(obj=>{
     return obj.id === query.slug
